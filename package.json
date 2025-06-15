@@ -3,7 +3,8 @@
     "version": "1.0.0",
     "type": "module",
     "scripts": {
-        "bench": "node --allow-natives-syntax ./bench/testPerf.js",
+        "bench-tdz": "node --allow-natives-syntax ./bench/test-perf-tdz.js",
+        "bench-var": "node --allow-natives-syntax ./bench/test-perf-var.js",
         "gen-const": "node --print-bytecode ./bytecode/demo-const.js > ./bytecode/bc-const.txt",
         "gen-let": "node --print-bytecode ./bytecode/demo-let.js > ./bytecode/bc-let.txt",
         "gen-var": "node --print-bytecode ./bytecode/demo-var.js > ./bytecode/bc-var.txt"
